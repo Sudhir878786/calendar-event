@@ -1,57 +1,66 @@
+# Installation 🔧
 
-### Installation 🔧
+## Local Installation
 
-Local installation:
+1. **Clone the Repository**
+   ```bash
+   git clone <repository-url>
+Navigate to the Project Path
+bash
+Copy code
+cd <project-directory>
+Server Setup
+Change Directory to the Server Path
 
-```bash
-# Clone this repository
-$ git clone 
-# Change directory to the project path
-```
+bash
+Copy code
+cd server
+Install Dependencies
 
----
+bash
+Copy code
+npm install
+Set Up Environment Variables
+Create a .env file in the server directory and add the following:
 
-**Server setup:**
-```bash
-# Change directory to the server path
-$ cd server
-
-# Install dependencies
-$ npm install
-
-
-```shell
+bash
+Copy code
 PORT=5000
-MONGODB_CNN= {Open MongoDB compass and connect to an existing server in my case mongodb://localhost:27017}
-JWT_SECRET_KEY=RANDOMKEY
-```
+MONGODB_CNN=mongodb://localhost:27017  # Replace with your MongoDB connection string
+JWT_SECRET_KEY=RANDOMKEY              # Replace with your secret key
+Client Setup
+Go Back to the Project Path
 
----
+bash
+Copy code
+cd ..
+Change Directory to the Client Path
 
-**Client setup:**
-```bash
-# Go back to the project path
-$ cd ..
+bash
+Copy code
+cd client
+Install Dependencies
 
-# Change directory to the client path
-$ cd client
+bash
+Copy code
+npm install
+Deployment 📦
+Start the Server
+Open a terminal in the project path and run:
 
-# Install dependencies
-$ npm install
+bash
+Copy code
+cd server
+npm start
+Start the Client
+Open another terminal in the project path and run:
 
+bash
+Copy code
+cd client
+npm start
+Access the Application
 
-
-## Deployment 📦
-
-```bash
-# Open terminal in project path and run
-$ cd server
-$ npm start
-
-
-# Open another terminal in project path and run
-$ cd client
-$ npm start
-```
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-```
+text
+Copy code
+Open your browser and navigate to: http://localhost:3000
